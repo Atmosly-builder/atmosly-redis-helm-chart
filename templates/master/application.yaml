@@ -69,8 +69,8 @@ spec:
       {{- if .Values.master.priorityClassName }}
       priorityClassName: {{ .Values.master.priorityClassName | quote }}
       {{- end }}
-      {{- if .Values.master.affinity }}
-      affinity: {{- include "common.tplvalues.render" (dict "value" .Values.master.affinity "context" $) | nindent 8 }}
+      {{- if .Values.global.affinity }}
+      affinity: {{- include "common.tplvalues.render" (dict "value" .Values.global.affinity "context" $) | nindent 8 }}
       {{- else }}
       affinity:
         podAffinity: {{- include "common.affinities.pods" (dict "type" .Values.master.podAffinityPreset "component" "master" "customLabels" $podLabels "context" $) | nindent 10 }}

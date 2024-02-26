@@ -22,6 +22,16 @@ global:
   storageClass: ""
   redis:
     password: ""
+  
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: "Infra-Services"
+            operator: In
+            values:
+            - "true"
 
 ## @section Common parameters
 ##
