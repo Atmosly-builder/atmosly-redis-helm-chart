@@ -754,6 +754,7 @@ spec:
           requests:
             storage: {{ .Values.replica.persistence.size | quote }}
         {{- if .Values.replica.persistence.selector }}
+        persistentVolumeReclaimPolicy: Delete
         selector: {{- include "common.tplvalues.render" ( dict "value" .Values.replica.persistence.selector "context" $) | nindent 10 }}
         {{- end }}
         {{- include "common.storage.class" (dict "persistence" .Values.replica.persistence "global" .Values.global) | nindent 8 }}

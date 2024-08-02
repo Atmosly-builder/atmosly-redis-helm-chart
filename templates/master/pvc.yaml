@@ -24,6 +24,7 @@ spec:
     requests:
       storage: {{ .Values.master.persistence.size | quote }}
   {{- if .Values.master.persistence.selector }}
+  persistentVolumeReclaimPolicy: Delete
   selector: {{- include "common.tplvalues.render" (dict "value" .Values.master.persistence.selector "context" $) | nindent 4 }}
   {{- end }}
   {{- if .Values.master.persistence.dataSource }}
