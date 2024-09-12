@@ -19,7 +19,7 @@ global:
 kubeVersion: ""
 nameOverride: ""
 fullnameOverride: ""
-namespaceOverride: "default"
+namespaceOverride: ""
 
 commonLabels: {}
 commonAnnotations: {}
