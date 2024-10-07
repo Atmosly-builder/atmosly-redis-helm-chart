@@ -11,7 +11,7 @@ global:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
         - matchExpressions:
-          - key: "Infra-Services"
+          - key: "Addons-Services"
             operator: In
             values:
             - "true"
@@ -162,7 +162,7 @@ master:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
         - matchExpressions:
-          - key: "Infra-Services"
+          - key: "Addons-Services"
             operator: In
             values:
             - "true"
@@ -201,9 +201,9 @@ master:
     persistentVolumeReclaimPolicy: Delete
 
   persistentVolumeClaimRetentionPolicy:
-    enabled: false
-    whenScaled: Retain
-    whenDeleted: Retain
+    enabled: true
+    whenScaled: Delete
+    whenDeleted: Delete
 
   service:
     type: ClusterIP
@@ -342,7 +342,7 @@ replica:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
         - matchExpressions:
-          - key: "Infra-Services"
+          - key: "Addons-Services"
             operator: In
             values:
             - "true"
@@ -377,9 +377,9 @@ replica:
     existingClaim: ""
 
   persistentVolumeClaimRetentionPolicy:
-    enabled: false
-    whenScaled: Retain
-    whenDeleted: Retain
+    enabled: true
+    whenScaled: Delete
+    whenDeleted: Delete
 
   service:
     type: ClusterIP
@@ -494,9 +494,9 @@ sentinel:
     sizeLimit: ""
 
   persistentVolumeClaimRetentionPolicy:
-    enabled: false
-    whenScaled: Retain
-    whenDeleted: Retain
+    enabled: true
+    whenScaled: Delete
+    whenDeleted: Delete
 
   resources:
     limits: {}
