@@ -202,7 +202,7 @@ master:
 
   persistentVolumeClaimRetentionPolicy:
     enabled: true
-    whenScaled: Delete
+    whenScaled: Retain
     whenDeleted: Delete
 
   service:
@@ -378,7 +378,7 @@ replica:
 
   persistentVolumeClaimRetentionPolicy:
     enabled: true
-    whenScaled: Delete
+    whenScaled: Retain
     whenDeleted: Delete
 
   service:
@@ -495,7 +495,7 @@ sentinel:
 
   persistentVolumeClaimRetentionPolicy:
     enabled: true
-    whenScaled: Delete
+    whenScaled: Retain
     whenDeleted: Delete
 
   resources:
