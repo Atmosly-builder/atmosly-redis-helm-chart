@@ -186,7 +186,7 @@ master:
     path: /data
     subPath: ""
     subPathExpr: ""
-    storageClass: "gp2"
+    storageClass: ""
 
     accessModes:
       - ReadWriteOnce
@@ -366,7 +366,7 @@ replica:
     path: /data
     subPath: ""
     subPathExpr: ""
-    storageClass: "gp2"
+    storageClass: ""
     accessModes:
       - ReadWriteOnce
     size: 8Gi
@@ -481,7 +481,7 @@ sentinel:
 
   persistence:
     enabled: false
-    storageClass: "gp2"
+    storageClass: ""
     accessModes:
       - ReadWriteOnce
 
