@@ -15,7 +15,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2025-05-23T15:56:37.212848614+05:30"
+    created: "2025-08-14T22:37:51.651165521+05:30"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -25,7 +25,7 @@ entries:
     description: Redis(R) is an open source, advanced key-value store. It is often
       referred to as a data structure server since keys can contain strings, hashes,
       lists, sets and sorted sets.
-    digest: 96ceb2fe06d54352bfcf38e03453f7b5c40073f882666cf6560e7a8da1405aa3
+    digest: 5ee2296f08dd38906a7fd863c4ad4ffbd5e005144be2a5631e1a22b2918c6082
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
     keywords:
@@ -55,7 +55,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2025-05-23T15:56:37.208336515+05:30"
+    created: "2025-08-14T22:37:51.63939827+05:30"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -95,7 +95,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2025-05-23T15:56:37.204626015+05:30"
+    created: "2025-08-14T22:37:51.623470473+05:30"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -135,7 +135,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2025-05-23T15:56:37.199715116+05:30"
+    created: "2025-08-14T22:37:51.612354368+05:30"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -175,7 +175,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2025-05-23T15:56:37.191912917+05:30"
+    created: "2025-08-14T22:37:51.579283378+05:30"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -201,4 +201,4 @@ entries:
     urls:
     - https://atmosly-builder.github.io/atmosly-redis-helm-chart/redis-18.12.1.tgz
     version: 18.12.1
-generated: "2025-05-23T15:56:37.185021418+05:30"
+generated: "2025-08-14T22:37:51.558907172+05:30"
