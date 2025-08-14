@@ -2,7 +2,7 @@ global:
   imageRegistry: ""
 
   imagePullSecrets: []
-  storageClass: "gp2"
+  storageClass: ""
   redis:
     password: ""
   
